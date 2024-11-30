@@ -1,0 +1,174 @@
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+/* Gray overlay */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value for the desired opacity */
+    z-index: 1;
+}
+
+.header .header-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 75px;
+    font-family: 'Times New Roman', serif;
+    color: white; /* Adjust color based on visibility over the image */
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    border: 5px solid black; /* Adds a black border around the whole webpage */
+    margin: 0; /* Removes any default margin around the body */
+    padding: 0; /* Removes any default padding around the body */
+    box-sizing: border-box;
+}
+
+/* Center all h1 elements */
+h1 {
+    text-align: center;
+}
+
+/* Container for left and right columns */
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start; /* Aligns left and right columns to the top */
+}
+
+/* Left column */
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns left navbar to the start */
+    justify-content: flex-start;
+    background-color: #f5f5f5;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    min-height: 400px; /* Adjust to match or exceed the canvas height */
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+.left-section 3dhop {
+    max-width: 100%;
+    height: auto;
+}
+
+#draw-canvas {
+    width: 90%;
+}
+
+.image-container {
+        position: relative;
+        display: inline-block;
+}
+
+.hover-image {
+        transition: filter 0.3s ease; /* Smooth grayscale transition */
+}
+
+.hover-image:hover {
+        filter: grayscale(100%); /* Apply grayscale effect */
+}
+
+.hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: 'Times New Roman', serif;
+        font-size: 50px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none; /* Makes the text unclickable */
+        text-align: center;
+        width: 100%;
+}
+
+.image-container:hover .hover-text {
+        opacity: 1; /* Show text on hover */
+}
+
+/* Right column */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns right navbar to the start */
+    justify-content: flex-start;
+    padding: 20px; /* Adjust padding to align with navbar */
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px; /* Ensure consistent spacing */
+    justify-content: center;
+}
+
+.navbar button {
+    padding: 10px 15px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Mobile layout: Stack columns on top of each other */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack on top of each other */
+    }
+
+@media (max-width: 768px) {
+    .header img {
+        max-height: 200px; /* Reduce max-height for mobile */
+    }
+
+@media (max-width: 768px) {
+    #draw-canvas {
+        height: 400px; /* Reduced height for smaller screens */
+    }
+
+    .right,
+    .left {
+        width: 100%;
+        height: auto;
+    }
+    
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+    .header .header-text {
+        font-size: 24px; /* Further scale down font size on smaller screens */
+        top: 5px; /* Adjust top positioning for mobile */
+        white-space: nowrap; /* Allow text wrapping */
+        padding: 0 10px; /* Add padding to prevent edge overflow */
+    }
+}
