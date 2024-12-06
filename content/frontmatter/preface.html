@@ -8,20 +8,22 @@
     <link rel="icon" type="image/x-icon" href="../../img/cross.ico">
 </head>
 <body>
+    
+   <div id="header"></div>
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+</script>
 
+    
     <div class="navigation-buttons">
   <button class="next/prev-button">Previous</button>
   <button class="next/prev-button">Next</button>
     </div>
-    
-    <!-- Header Section -->
-    <header class="header">
-       <!-- https://www.flickr.com/photos/71629876@N08/6946872580/ -->
-        <a href="home.html">
-        <img src="../../img/head_outside.jpg" alt="Project Image" title="The Visionary Cross Project">
-        <p class="header-text">The Visionary Cross Project</p>
-        </a>
-    </header>
     
     <!-- Main Container for Left and Right Columns -->
     <div class="container">
