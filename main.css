@@ -46,6 +46,27 @@ h1 {
     text-align: center;
 }
 
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+
+.next/prev-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Adjust button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.next/prev:hover {
+  background-color: #0056b3; /* Adjust hover color */
+}
+
 /* Container for left and right columns */
 .container {
     display: flex;
