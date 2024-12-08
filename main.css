@@ -278,7 +278,7 @@ h1 {
     }
 
     .navbar button {
-        width: 80px; /* Slightly smaller width for mobile */
+        width: 50px; /* Slightly smaller width for mobile */
         height: 30px; /* Slightly smaller height */
         font-size: 8px; /* Smaller text for better fit */
     }
