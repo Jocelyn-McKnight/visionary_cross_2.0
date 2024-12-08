@@ -62,7 +62,8 @@ h1 {
     border: 2px solid black; /* Button border */
     border-radius: 5px; /* Rounded corners */
     font-size: 10px; /* Text size */
-    text-align: center; /* Center the text */
+   justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
     text-decoration: none; /* Remove underline from links */
     transition: background-color 0.3s ease; /* Smooth hover transition */
 }
