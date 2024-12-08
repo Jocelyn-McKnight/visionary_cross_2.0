@@ -67,6 +67,13 @@ h1 {
     transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
+#3dhop-container {
+    position: relative; /* Ensures it positions correctly */
+    width: 100%; /* Makes it responsive */
+    height: 500px; /* Adjust this height as needed */
+    background-color: #f0f0f0; /* Optional: Background color for better contrast */
+}
+
 /* Container for left and right columns */
 .container {
     display: flex;
@@ -93,15 +100,6 @@ h1 {
     width: 100%;
     height: auto;
     margin-top: 0;
-}
-
-.left-section 3dhop {
-    max-width: 100%;
-    height: auto;
-}
-
-#draw-canvas {
-    width: 90%;
 }
 
 .image-container {
