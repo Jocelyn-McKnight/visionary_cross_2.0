@@ -55,6 +55,7 @@ h1 {
 }
 
 .page-nav-button {
+    display: inline-flex; /* Use inline-flex for inline alignment */
     width: 75px; /* Fixed width for consistent size */
     height: 25px; /* Fixed height for consistent size */
     background-color: white; /* Default button background color */
@@ -63,9 +64,9 @@ h1 {
     border-radius: 5px; /* Rounded corners */
     font-size: 10px; /* Text size */
    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
     text-decoration: none; /* Remove underline from links */
     transition: background-color 0.3s ease; /* Smooth hover transition */
+     line-height: normal; /* Ensure text height doesn’t interfere */
 }
 
 .3dhop-container {
