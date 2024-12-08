@@ -55,8 +55,8 @@ h1 {
 }
 
 .page-nav-button {
-    width: 150px; /* Fixed width for consistent size */
-    height: 50px; /* Fixed height for consistent size */
+    width: 75px; /* Fixed width for consistent size */
+    height: 25px; /* Fixed height for consistent size */
     background-color: white; /* Default button background color */
     color: black; /* Button text color */
     border: 2px solid black; /* Button border */
@@ -66,11 +66,6 @@ h1 {
     line-height: 50px; /* Vertical alignment for link text */
     text-decoration: none; /* Remove underline from links */
     transition: background-color 0.3s ease; /* Smooth hover transition */
-}
-
-/* Hover Effect for Page Navigation Buttons */
-.page-nav-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Container for left and right columns */
@@ -162,12 +157,13 @@ h1 {
 }
 
 .navbar button {
-    width: 150px; /* Fixed width for consistent size */
-    height: 50px; /* Fixed height for consistent size */
+    width: 100px; /* Fixed width for consistent size */
+    height: 35px; /* Fixed height for consistent size */
     background-color: white; /* Default button background color */
     color: black; /* Button text color */
     border: 2px solid black; /* Button border */
     border-radius: 5px; /* Rounded corners */
+     font-family: 'Times New Roman', serif;
     font-size: 16px; /* Text size */
     cursor: pointer; /* Pointer cursor on hover */
     text-align: center; /* Center the text */
