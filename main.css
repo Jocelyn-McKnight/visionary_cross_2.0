@@ -74,6 +74,7 @@ h1 {
     width: 100%; /* Makes it responsive */
     height: 1000px; /* Adjust this height as needed */
     background-color: #f0f0f0; /* Optional: Background color for better contrast */
+    box-sizing: border-box; /* Ensure padding and borders are included in height */
 }
 
 /* Container for left and right columns */
