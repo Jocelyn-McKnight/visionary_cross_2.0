@@ -271,17 +271,15 @@ h1 {
         padding: 0 10px; /* Add padding to prevent edge overflow */
     }
 
-    /* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center align buttons */
-        gap: 10px; /* Reduce spacing between buttons */
+        justify-content: space-between; /* Spread out the buttons horizontally */
+        gap: 10px; /* Adjust space between buttons */
     }
 
     .navbar button {
-        width: 90%; /* Take up most of the screen width */
-        font-size: 14px; /* Slightly larger font size for readability */
-        height: 40px; /* Increase button height for easier tap targets */
+        width: 80px; /* Slightly smaller width for mobile */
+        height: 30px; /* Slightly smaller height */
+        font-size: 10px; /* Smaller text for better fit */
     }
 }
