@@ -57,8 +57,9 @@ h1 {
 
 /* Individual Page Navigation Buttons */
 .page-nav-button {
-  padding: 10px 20px;
-  background-color: #007bff; /* Button color */
+  padding: 10px 15px;
+  width: 75px; /* Fixed width for all buttons */
+  height: 15px; /* Fixed height for all buttons */
   color: white;
   border: none;
   border-radius: 5px;
@@ -159,7 +160,9 @@ h1 {
 }
 
 .navbar button {
-    padding: 10px 15px;
+    padding: 10px 20px;
+    width: 75px; /* Fixed width for all buttons */
+    height: 25px; /* Fixed height for all buttons */
     border: 1px solid black;
     cursor: pointer;
 }
