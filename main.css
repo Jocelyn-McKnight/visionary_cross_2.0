@@ -70,7 +70,7 @@ h1 {
 .3dhop-container {
     position: relative; /* Ensures it positions correctly */
     width: 100%; /* Makes it responsive */
-    height: 500px; /* Adjust this height as needed */
+    height: 1000px; /* Adjust this height as needed */
     background-color: #f0f0f0; /* Optional: Background color for better contrast */
 }
 
