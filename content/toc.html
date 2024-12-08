@@ -8,6 +8,21 @@
     <link rel="icon" type="image/x-icon" href="../../img/cross.ico">
 </head>
 <body>
+      
+   <div id="header"></div>
+<script>
+    fetch('../../header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+</script>
+
+    <div class="page-navigation">
+  <a href="about/more.html" class="page-nav-button">Previous</a>
+  <a href="preface.html" class="page-nav-button">Next</a>
+</div>
 
 <div class="table-of-contents">
     <h1>Table of Contents</h1>
