@@ -270,4 +270,18 @@ h1 {
         white-space: nowrap; /* Allow text wrapping */
         padding: 0 10px; /* Add padding to prevent edge overflow */
     }
+
+    /* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+        gap: 10px; /* Reduce spacing between buttons */
+    }
+
+    .navbar button {
+        width: 90%; /* Take up most of the screen width */
+        font-size: 14px; /* Slightly larger font size for readability */
+        height: 40px; /* Increase button height for easier tap targets */
+    }
 }
