@@ -172,50 +172,6 @@ h1 {
     transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-.table-of-contents {
-    font-family: 'Times New Roman', serif; /* Classic font style */
-    line-height: 1.6; /* Adjust spacing */
-    margin: 20px;
-}
-
-.table-of-contents h1 {
-    font-size: 2rem; /* Larger font for title */
-    text-align: center; /* Center the title */
-    margin-bottom: 10px;
-}
-
-.table-of-contents h2 {
-    font-size: 1.5rem; /* Slightly smaller subtitle */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.table-of-contents ul {
-    list-style-type: disc; /* Standard bullet points */
-    margin-left: 20px; /* Indent for hierarchy */
-    padding-left: 10px;
-}
-
-.table-of-contents ul ul {
-    list-style-type: circle; /* Subsection bullets */
-    margin-left: 20px;
-}
-
-.table-of-contents ul ul ul {
-    list-style-type: square; /* Nested subsection bullets */
-    margin-left: 20px;
-}
-
-.table-of-contents a {
-    text-decoration: none; /* Remove underline */
-    color: purple; /* Link color */
-}
-
-.table-of-contents a:hover {
-    text-decoration: underline; /* Add underline on hover */
-    color: red; /* Change color on hover */
-}
-
 .footer {
     width: 100%;
     background-color: Gray;
