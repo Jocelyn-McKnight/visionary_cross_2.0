@@ -46,25 +46,27 @@ h1 {
     text-align: center;
 }
 
-.navigation-buttons {
+/* Page Navigation Buttons Container */
+.page-navigation {
   display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-  padding: 10px 20px;
+  justify-content: space-between; /* Space out buttons evenly */
+  align-items: center; /* Align items vertically */
+  margin: 20px 0; /* Add space above and below the navigation */
+  padding: 10px 20px; /* Add padding to the container */
 }
 
-.next/prev-button {
+/* Individual Page Navigation Buttons */
+.page-nav-button {
   padding: 10px 20px;
-  background-color: #007bff; /* Adjust button color */
+  background-color: #007bff; /* Button color */
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  cursor: pointer;
-}
-
-.next/prev:hover {
-  background-color: #0056b3; /* Adjust hover color */
+  text-decoration: none; /* Remove underline from links */
+  text-align: center; /* Center text inside the button */
+  cursor: pointer; /* Show pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 /* Container for left and right columns */
