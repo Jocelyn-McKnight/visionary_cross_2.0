@@ -8,7 +8,7 @@
     height: auto;
 }
 
-/* Gray overlay */
+/* Gray overlay. */
 .header::before {
     content: "";
     position: absolute;
@@ -35,18 +35,18 @@
 
 body {
     font-family: 'Times New Roman', serif;
-    border: 5px solid black; /* Adds a black border around the whole webpage */
+    border: 5px solid black; /* Adds a black border around the whole webpage. Makes it look very nice in the mobile form */
     margin: 0; /* Removes any default margin around the body */
     padding: 0; /* Removes any default padding around the body */
     box-sizing: border-box;
 }
 
-/* Center all h1 elements */
+/* Center all h1 elements. Used for big titles at top of page only*/
 h1 {
     text-align: center;
 }
 
-/* Page Navigation Buttons */
+/* Page Navigation Buttons (so only for the next and previous buttons not the other ones)*/
 .page-navigation {
     display: flex;
     justify-content: space-between; /* Space buttons to the edges */
@@ -54,6 +54,7 @@ h1 {
     padding: 0 20px; /* Add horizontal padding for spacing */
 }
 
+/* Many issues with making these buttons look like smaller versions of the main nav bar. It should be fixed now*/
 .page-nav-button {
     display: inline-flex; /* Use inline-flex for inline alignment */
     width: 75px; /* Fixed width for consistent size */
@@ -65,18 +66,20 @@ h1 {
     font-size: 10px; /* Text size */
    justify-content: center; /* Center text horizontally */
     text-decoration: none; /* Remove underline from links */
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    transition: background-color 0.3s ease; /* Smooth hover transition (not in use)*/
      line-height: normal; /* Ensure text height doesn’t interfere */
 }
 
+/* Needs to be fixed. The container always feels so short and stunted*/
 .3dhop-container {
     position: relative; /* Ensures it positions correctly */
-    width: 100%; /* Makes it responsive */
+    width: 100%; /* Consider making this smaller*/
     height: 1000px; /* Adjust this height as needed */
     background-color: #f0f0f0; /* Optional: Background color for better contrast */
     box-sizing: border-box; /* Ensure padding and borders are included in height */
 }
 
+/* For the Toc in the backmatter section. Inspried from the Caedmon's hymn toc. Some of that is unnecessary. Clean it up*/
 .table-of-contents {
     font-family: 'Times New Roman', serif; /* Classic font style */
     line-height: 1.6; /* Adjust spacing */
@@ -136,10 +139,10 @@ h1 {
     align-items: flex-start; /* Aligns left navbar to the start */
     justify-content: flex-start;
     width: 50%; /* Take 50% of the page */
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* I thought this was a great idea and I will die on this hill*/
     padding: 20px 20px 0 20px;
     box-sizing: border-box;
-    min-height: 400px; /* Adjust to match or exceed the canvas height */
+    min-height: 400px; /* Thise was probably mainly put in for the 1.0 version and might be unnecessary now */
 }
 
 .left img {
@@ -153,6 +156,7 @@ h1 {
         display: inline-block;
 }
 
+/* Inspired from the Balsignanomodugno project http://www.casaledibalsignano.it */
 .hover-image {
         transition: filter 0.3s ease; /* Smooth grayscale transition */
 }
@@ -172,7 +176,7 @@ h1 {
         font-weight: bold;
         opacity: 0;
         transition: opacity 0.3s ease;
-        pointer-events: none; /* Makes the text unclickable */
+        pointer-events: none; /* why */
         text-align: center;
         width: 100%;
 }
@@ -193,7 +197,7 @@ h1 {
     box-sizing: border-box;
 }
 
-/* Navbar Styling */
+/* Navbar Styling (not for the next and previous buttons) */
 .navbar {
     display: flex;
     justify-content: center; /* Center the buttons */
@@ -217,7 +221,7 @@ h1 {
 
 .footer {
     width: 100%;
-    background-color: Gray;
+    background-color: Gray; /* Consider changing this colout */
     color: #fff;
     text-align: center; /* Center text horizontally */
     padding: 20px 0; /* Adjust padding for spacing */
@@ -240,6 +244,7 @@ h1 {
     color: #fff;
 }
 
+/* I don't think it needs to say media every time. Combine them all */
 /* Mobile layout: Stack columns on top of each other */
 @media (max-width: 768px) {
     .container {
@@ -273,7 +278,7 @@ h1 {
 
 @media (max-width: 768px) {
     .navbar {
-        justify-content: space-between; /* Spread out the buttons horizontally */
+        justify-content: center; /* Seeing if this will make it better */
         gap: 10px; /* Adjust space between buttons */
     }
 
